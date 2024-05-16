@@ -27,7 +27,7 @@ export default defineConfig({
             chunkFileNames: '_ghchart/[name].[hash].js',
             entryFileNames: '_ghchart/[name].[hash].js',
             manualChunks: {
-               vendor_codeBlock: ['highlight.js', 'clipboard', 'highlight.js/lib/languages/javascript.js'],
+               vendor_highlight: ['highlight.js', 'highlight.js/lib/languages/javascript.js'],
                vendor_react: ['react-dom']
             }
          }
