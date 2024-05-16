@@ -1,0 +1,64 @@
+/** 
+  * 此文件为主内容块样式表
+  * @version 1.0
+  */
+@import url('./global.less');
+
+main {
+   p {
+      padding: .5em 0;
+      font-size: var(--main-p-size);
+      margin: 0 calc(var(--cg-spacing));
+      width: calc(100% - 2* var(--cg-spacing));
+      line-height: 1.5;
+      word-break: break-all;
+   }
+
+   .code-block {
+      margin: 0 var(--cg-spacing-code);
+
+      button {
+         position: absolute;
+         top: 12px;
+         right: 12px;
+         height: 28px;
+         border: 1px solid #eee;
+         background-color: #fff;
+         color: #222;
+         font-size: 14px;
+         opacity: .5;
+         transition: opacity .3s;
+      }
+      button:hover {
+         opacity: 1;
+         transition: opacity .3s;
+      }
+   }
+
+   // 经过测定，该 API 返回的 svg 宽度为 663px，高度为 104px
+   .img-placeholder {
+      height: 110px; // 104+2*2*1.2
+      padding: 1.2rem 1em;
+      margin: .5em auto;
+      border-radius: 6px;
+      border: 1px solid #f2f2f2;
+      background-color: #fcfcfc;
+      width: calc(100% - 2*var(--cg-spacing-code) - 2*1em);
+      overflow-x: auto;
+      overflow-y: hidden;
+      img {
+         display: block;
+         width: 663px;
+         height: 104px;
+         margin: auto;
+      }
+   }
+}
+
+// 响应式适配 ------ 移动端
+@media screen and (max-width: 600px) {
+   :root { --main-p-size: 16px; }
+}
+@media screen and (min-width: 600px) {
+   :root { --main-p-size: 18px; }
+}

@@ -1,0 +1,23 @@
+/** 
+  * 此文件为顶栏样式表
+  * @version 1.0
+  */
+@import url('./global.less');
+
+header {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 999;
+   background-color: #ffffffcc;
+   backdrop-filter: blur(4px);
+   font-size: 1.2rem;
+   font-weight: 600;
+   padding: .9em var(--cg-spacing);
+   border-bottom: 1px solid #e8e8e8;
+
+   a.title:hover {
+      color: @cg-color-theme;
+   }
+}

@@ -1,0 +1,26 @@
+/** 
+  * 此文件为小标题样式表
+  * @version 1.0
+  */
+@import url("../global.less");
+
+.catalog {
+   position: relative;
+   font-size: 26px;
+   line-height: 30px;
+   padding-left: .75em;
+   font-weight: 600;
+   margin: .5em var(--cg-spacing);
+}
+.catalog::before {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 7px;
+   border-radius: 3px;
+   background-color: @cg-color-theme;
+   font-weight: 600;
+}

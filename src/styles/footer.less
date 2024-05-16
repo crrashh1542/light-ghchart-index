@@ -1,0 +1,42 @@
+/** 
+  * 此文件为页脚样式表
+  * @version 1.0
+  */
+@import url('./global.less');
+
+// 基础样式
+footer {
+   border-top: 1px solid #e8e8e8;
+   color: #666;
+   font-size: var(--footer-text-size);
+   text-align: center;
+   margin-top: 3em;
+   padding: 16px 1em;
+   line-height: 1.6;
+   p {
+      margin: 0;
+      font-size: var(--footer-text-size);
+
+      a { color: #666; }
+      a:hover { color: @cg-color-theme; }
+      
+      img {
+         margin-left: 2px;
+         width: var(--footer-text-size);
+         height: var(--footer-text-size);
+      }
+      img.miit {
+         margin-left: 0;
+         margin-right: 4px;
+      }
+   }
+}
+
+// 响应式适配 ------ PC
+@media screen and (min-width: 600px) {
+   :root { --footer-text-size: 16px; }
+}
+// 响应式适配 ------ 移动端
+@media screen and (max-width: 600px) {
+   :root { --footer-text-size: 14px; }
+}

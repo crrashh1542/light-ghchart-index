@@ -1,0 +1,59 @@
+/** 
+  * 此文件为全局初始化样式文件
+  * @version 1.0
+  */
+@import url('./global.less');
+// @import url('../assets/fonts/dev.less');
+@import url('../assets/fonts/prod.less');
+
+// 全局样式配置
+body {
+   font-family: 'Inter';
+   color: #222;
+
+   // 顶部占位 div，消除 Appbar 的空位
+   .placeholder {
+      height: calc(1.7rem + 1.8em); // Appbar 的实际高度
+      width: 100%;
+   }
+
+   // 处理 a 标签显色问题
+   a {
+      color: #222;
+      text-decoration: none;
+   }
+   a:hover {
+      color: #222;
+      text-decoration: none;
+   }
+   a:visited {
+      color: #222;
+      text-decoration: none;
+   }
+
+   // 指定 code 字体
+   pre {
+      margin: .5em 0;
+      font-family: 'JetBrains Mono';
+   }
+}
+
+*::selection {
+   background: @cg-color-theme;
+   color: #fff;
+}
+
+// 响应式适配 ------ 移动端
+@media screen and (max-width: 880px) {
+   :root {
+      --cg-spacing: 20px;
+      --cg-spacing-code: 0;
+   }
+}
+// 响应式适配 ------ PC端
+@media screen and (min-width: 880px) {
+   :root {
+      --cg-spacing: 15%;
+      --cg-spacing-code: 15%;
+   }
+}

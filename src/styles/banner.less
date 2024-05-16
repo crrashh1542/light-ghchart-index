@@ -1,0 +1,56 @@
+/** 
+  * 此文件为横幅样式表
+  * @version 1.0
+  */
+@import url('./global.less');
+
+.banner {
+   width: 100%;
+   margin: 20vh var(--cg-spacing);
+   width: calc(100% - 2*var(--cg-spacing));
+   text-align: center;
+
+   .title {
+      font-size: var(--banner-title-size);
+      line-height: var(--banner-title-lh);
+      font-weight: 700;
+      color: transparent;
+      background: linear-gradient(150deg, #f0f4c3, #66bb6a);
+      background-clip: text;
+   }
+
+   .subtitle {
+      font-size: var(--banner-subtitle-size);
+      line-height: var(--banner-subtitle-lh);
+      margin-top: var(--banner-spacing);
+      font-weight: 600;
+      color: #666;
+      a { color: #666; }
+      img {
+         margin-left: 3px;
+         width: var(--banner-subtitle-size);
+         height: var(--banner-subtitle-size);
+      }
+   }
+}
+
+// 响应式适配 ------ PC
+@media screen and (min-width: 800px) {
+   .banner {
+      --banner-title-size: 4.5rem;
+      --banner-title-lh: 6.5rem;
+      --banner-spacing: .3em;
+      --banner-subtitle-size: 1.75rem;
+      --banner-subtitle-lh: 3rem;
+   }
+}
+// 响应式适配 ------ 移动端
+@media screen and (max-width: 800px) {
+   .banner {
+      --banner-title-size: 3rem;
+      --banner-title-lh: 4rem;
+      --banner-spacing: 1em;
+      --banner-subtitle-size: 1.4rem;
+      --banner-subtitle-lh: 2.4rem;
+   }
+}
