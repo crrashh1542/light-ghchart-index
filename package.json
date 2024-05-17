@@ -7,7 +7,15 @@
       "email": "kotsuki@crrashh.com",
       "url": "https://www.crrashh.com"
    },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/crrashh1542/light-ghchart-index"
+   },
+   "bugs": {
+      "url": "https://github.com/crrashh1542/light-ghchart-index/issues"
+   },
    "type": "module",
+   "license": "Apache-2.0",
    "scripts": {
       "dev": "vite",
       "build": "tsc && vite build",
