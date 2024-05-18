@@ -23,3 +23,6 @@ pnpm build
 ``` 
 
 4. 将 `dist` 目录下产生的内容放入 `../backend/public` 目录下，同时按照原 API 项目要求启动即可。
+
+### 示例
+感谢 [@ltzXiaoYanMo](https://github.com/ltzXiaoYanMo) 提供的试验田：https://chart.ymbit.cn
